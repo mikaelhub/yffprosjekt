@@ -1,0 +1,70 @@
+
+<html>
+
+	<head>
+	<title>Hovudside</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="farge.css">
+	<link rel="stylesheet" type="text/css" href="navigere.css">
+	
+	</head>
+	
+	
+	<body>
+	<ul>
+  <li><a href="../index2.html">Startsida</a></li>
+  <li><a href="hovudside.html">Hovedsida</a></li>
+  <li><a href="innhold/interesse.html">Interesser</a></li>
+  <li><a href="innhold/data.html">Oppbygging av data</a></li>
+  </ul>
+
+		
+		<br>
+		<br>
+		&emsp; &ensp;
+		<img src="ute.jpg" width="220" height="180" alt="bilde av utsikten"> &emsp;
+		<img src="ute2.jpg" width="220" height="180" alt="bilde av utsikt 1 vinkel"> &emsp;
+		<img src="sykkel.jpg" width="220" height="180" alt="bilde av sykkel"> &emsp;
+		<img src="dor.jpg" width="220" height="180" alt="bilde av dør"> &emsp;
+		<img src="ador.jpg" width="220" height="180" alt="bilde av ein annan dør"> &emsp;
+		<br>
+		&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
+		<b><font size="5">Video 31 sek</font></b><br>
+		<br>
+		&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
+		<video width="320" height="240" controls>
+  <source src="video.mp4" type="video/mp4">
+  <source src="video.ogg" type="video/ogg">
+		</video>
+		<br>
+		<br>
+		
+		<h2 class="w3-center">Bildane</h2>
+
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="ute.jpg" style="width:100%">
+  <img class="mySlides" src="ute2.jpg" style="width:100%">
+  <img class="mySlides" src="sykkel.jpg" style="width:100%">
+   <img class="mySlides" src="dor.jpg" style="width:100%">
+    <img class="mySlides" src="ador.jpg" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+		
+	</body>
+</html>
